@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     react(),
     mpa({
-      open: '/main',
+      open: '/',
       scanDir: 'src/pages',
       scanFile: 'main.tsx',
     }),
@@ -18,7 +18,7 @@ export default defineConfig({
       pagesDir: 'src/pages',
       // define pages like it is done in vue-cli
       pages: {
-        main: {
+        index: {
           template: 'src/pages/main/index.html',
           entry: '',
           title: 'Homepage',
